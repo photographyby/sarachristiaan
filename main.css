@@ -1,0 +1,217 @@
+
+h1 {
+    font: 70px;
+    font-family: Raleway;
+    text-align: center;
+    color:  #000000;
+} /* The heading is in the font Raleway in black and size 60px */
+
+  body {
+    font-family: Raleway;
+    line-height: 1.8;
+    color: #000000;
+	text-align: center;
+    background-color: #f1f1f1;
+  } /* The body is in the font Raleway in black and size 30px */
+
+  p {
+	 font:30px Raleway, sans-serif;
+     color: black;
+     padding-left: 20%;
+     padding-right: 20%;
+     font-size-adjust: auto;
+  } /* The paragraphs are in the font Raleway in black and 30px */
+  
+a {
+    color: #000000;
+}
+
+.header .logo {
+    float: left;
+    display: flex;
+    padding-top: 1.5em;
+    padding-left: 0.5em;
+}
+
+.logo img {
+    max-width: 17em;
+    height: auto;
+}
+
+.header ul {
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
+    font-size: auto;
+    color: #000000;
+}
+
+.header ul a {
+    font-size: 28px;
+    display: block;
+    text-decoration: none;
+    color: #000000;
+}
+
+.header ul a:hover {
+  color: #9bf5ff;
+}
+
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.header .menu-icon {
+    padding: 28px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+.header .menu-icon .nav-icon {
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition: background .2s ease-out;
+}
+
+.header .menu-icon .nav-icon:before {
+    background: #000000;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: 5px;  
+
+}
+
+.header .menu-icon .nav-icon:after {
+    background: #000000;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: -5px;  
+
+}
+
+.header .menu-btn { 
+    display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+    max-height: 280px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+    background: transparent;
+}
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+@media (min-width: 60em) {
+
+    .header li {
+        float: left;
+    }
+    .header li a {
+        padding: 20px 30px;
+    }
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    .header .menu-icon {
+        display: none;
+    }
+
+}
+
+img.home {
+    display: flex;
+    max-width: 99%;
+    align-content: center;
+    padding-top: 2%;
+    bottom: auto;
+    
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Position the "next button" to the right */
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* When the cursor hovers over the arrow, the background turns light blue as an accent */
+.prev:hover, .next:hover {
+  background-color: #9bf5ff;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+fieldset {
+    border: 0;
+    font-size: 20px;
+    display: block;
+}
