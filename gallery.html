@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     
     <head>
         <meta charset="utf-8">
@@ -12,16 +12,14 @@
   
     <body>
         
+    <!-- Navigation Bar -->
        <header class="header">
-            <a href="index.html" class="logo"><img src="img/logo1.gif"></a>
+            <a href="index.html" class="logo"><img src="img/logo1.gif" alt=logo></a>
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
             <ul class="menu">
-                &nbsp;
                 <li><a href="gallery.html">gallery</a></li>
-                &nbsp;
                 <li><a href="about.html">about</a></li>
-                &nbsp;
                 <li><a href="contact.html">contact</a></li>
             </ul>
         </header>
@@ -32,47 +30,48 @@
         <br>
         
         <h1>gallery</h1>
-        
-<div class="slideshow-container">
+
+<!-- Slideshow of Images -->
+<div class="slideshow-container">                      
 
 <div class="mySlides fade">
-  <img src="img/gallery_img1.gif" style="width:100%">
+  <img src="img/gallery_img1.gif" style="width:100%" alt="Image of forest and river">
 </div>
 
 <div class="mySlides fade">
-  <img src="img/gallery_img2.gif" style="width:50%">
+  <img src="img/gallery_img2.gif" style="width:50%" alt="Image of starry night sky at Muriwai beach">
 </div>
 
 <div class="mySlides fade">
-  <img src="img/gallery_img3.gif" style="width:100%">
+  <img src="img/gallery_img3.gif" style="width:100%" alt="Image of Japanese temple">
 </div>
 
 <div class="mySlides fade">
-  <img src="img/gallery_img4.gif" style="width:100%">
+  <img src="img/gallery_img4.gif" style="width:100%" alt="Image of people wearing traditional Japanese clothing">
 </div>
 
 <div class="mySlides fade">
-  <img src="img/gallery_img5.gif" style="width:50%">
+  <img src="img/gallery_img5.gif" style="width:50%" alt="Closer up image of people wearing traditional Japanese clothing">
 </div>    
     
 <div class="mySlides fade">
-  <img src="img/gallery_img6.gif" style="width:100%">
+  <img src="img/gallery_img6.gif" style="width:100%" alt="Image of beach">
 </div>
     
 <div class="mySlides fade">
-  <img src="img/gallery_img7.gif" style="width:100%">
+  <img src="img/gallery_img7.gif" style="width:100%" alt="Image of silhouette people">
 </div>
     
 <div class="mySlides fade">
-  <img src="img/gallery_img8.gif" style="width:100%">
+  <img src="img/gallery_img8.gif" style="width:100%" alt="Image of forest and clouds">
 </div>
     
 <div class="mySlides fade">
-  <img src="img/gallery_img9.gif" style="width:100%">
+  <img src="img/gallery_img9.gif" style="width:100%" alt="Image of Erika">
 </div>
     
 <div class="mySlides fade">
-  <img src="img/gallery_img10.gif" style="width:50%">
+  <img src="img/gallery_img10.gif" style="width:50%" alt="Image of Sophia">
 </div>
     
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -80,6 +79,7 @@
 
 </div>
 
+<!-- Javascript code for Slideshow buttons -->
 <script>
 var slideIndex = 1;
 showSlides(slideIndex);

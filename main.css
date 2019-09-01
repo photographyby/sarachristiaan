@@ -1,31 +1,35 @@
-
+/* The heading is in the font Raleway in black and size 70px */
 h1 {
     font: 70px;
     font-family: Raleway;
     text-align: center;
     color:  #000000;
-} /* The heading is in the font Raleway in black and size 60px */
+} 
 
+/* The body is in the font Raleway in black */
   body {
     font-family: Raleway;
     line-height: 1.8;
     color: #000000;
 	text-align: center;
     background-color: #f1f1f1;
-  } /* The body is in the font Raleway in black and size 30px */
+  } 
 
+/* The paragraphs are in the font Raleway in black and 30px */
   p {
 	 font:30px Raleway, sans-serif;
      color: black;
      padding-left: 20%;
      padding-right: 20%;
      font-size-adjust: auto;
-  } /* The paragraphs are in the font Raleway in black and 30px */
-  
+  } 
+
+/* The colour of hyperlinks is black */
 a {
     color: #000000;
-}
+} 
 
+/* This style code for the navigation bar: */
 .header .logo {
     float: left;
     display: flex;
@@ -123,6 +127,8 @@ a {
     top: 0;
 }
 
+
+/* Responsive navigation bar: */
 @media (min-width: 60em) {
 
     .header li {
@@ -142,6 +148,7 @@ a {
 
 }
 
+/* Auckland harbour bridge image */
 img.home {
     display: flex;
     max-width: 99%;
@@ -158,7 +165,7 @@ img.home {
   margin: auto;
 }
 
-/* Next & previous buttons */
+/* Next & previous buttons for the slideshow */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -181,6 +188,7 @@ img.home {
 }
 
 /* Position the "next button" to the right */
+
 .prev {
   left: 0;
   border-radius: 3px 0 0 3px;
@@ -191,7 +199,7 @@ img.home {
   background-color: #9bf5ff;
 }
 
-/* Fading animation */
+/* Fading animation for slideshow images */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -209,7 +217,7 @@ img.home {
   to {opacity: 1}
 }
 
-
+/* Contact page: response line size for writing */
 fieldset {
     border: 0;
     font-size: 20px;

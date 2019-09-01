@@ -1,3 +1,7 @@
+// This Javascript code for the form submission on the Contact webpage was created by Sean McKenna and uploaded onto GitHub as an open sourced software.
+// It is intended to be free for anyone to use personally for their own website, etc.
+
+
 (function () {
 
   // get all data in form and return object
